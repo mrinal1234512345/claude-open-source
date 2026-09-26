@@ -1,23 +1,59 @@
-# OpenSource Starter
+\# OpenSource Starter
 
-A small open-source developer utility project built to make it easier to track and organize contributions to open-source projects.
 
-## Goals
 
-- Track open-source contributions
-- Keep a simple project roadmap
-- Provide a clean starting point for future contributors
+OpenSource Starter is a small, beginner-friendly developer utility for tracking and organizing contributions to open-source projects.
 
-## Getting started
 
-This project is currently in its early development stage.
 
-## Contributing
+The project is intentionally simple so that new contributors can understand the codebase and add features without needing a large framework.
 
-Contributions, suggestions, bug reports, and documentation improvements are welcome.
 
-See docs/roadmap.md for planned improvements.
 
-## License
+\## Features
 
-MIT License.
+
+
+\- Add open-source projects with a name and GitHub URL
+
+\- Track the number of contributions associated with each project
+
+\- Display total projects and contributions
+
+\- Simple browser-based interface
+
+\- Automated tests for the project data layer
+
+\- Beginner-friendly project structure
+
+
+
+\## Project structure
+
+
+
+```text
+
+OpenSource Starter/
+
+├── docs/
+
+│   └── roadmap.md
+
+├── src/
+
+│   ├── app.js
+
+│   ├── app.test.js
+
+│   ├── data.js
+
+│   └── styles.css
+
+├── .gitignore
+
+├── index.html
+
+├── LICENSE
+
+└── README.md
