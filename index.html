@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSource Starter</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <main>
+        <h1>OpenSource Starter</h1>
+        <p>Track and organize your open-source contributions.</p>
+
+        <section id="stats">
+            <div>
+                <strong id="project-count">0</strong>
+                <span>Projects</span>
+            </div>
+            <div>
+                <strong id="contribution-count">0</strong>
+                <span>Contributions</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Add a project</h2>
+
+            <form id="project-form">
+                <input
+                    id="project-name"
+                    type="text"
+                    placeholder="Project name"
+                    required
+                >
+
+                <input
+                    id="project-url"
+                    type="url"
+                    placeholder="https://github.com/..."
+                    required
+                >
+
+                <button type="submit">Add Project</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Your projects</h2>
+            <ul id="project-list"></ul>
+        </section>
+    </main>
+
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>
