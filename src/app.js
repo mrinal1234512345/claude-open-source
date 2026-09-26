@@ -33,15 +33,18 @@ function renderProjects() {
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const project = addProject({
-        name: projectName.value.trim(),
-        url: projectUrl.value.trim(),
-        contributions: 0
-    });
+    const name = projectName.value.trim();
+    const url = projectUrl.value.trim();
 
-    if (!project.name || !project.url) {
+    if (!name || !url) {
         return;
     }
+
+    addProject({
+        name,
+        url,
+        contributions: 0
+    });
 
     form.reset();
     renderProjects();
